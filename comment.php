@@ -42,8 +42,14 @@ while($stmt->fetch()){
         echo "</fieldset>";
 		 echo "<input type= 'hidden' name='title' value='$title' />";
         echo "<input type= 'hidden' name='author' value='$author' />";
-        echo "<input type= 'hidden' name='comment' value='$comment' />";
+        echo "<input type= 'hidden' name='comment' value='$comment' />";	
 		echo "<p><input type='submit' value='edit' /></p>";
+		echo "</form>";
+		echo "<form action= 'deletecomment.php' method = 'POST'>";
+        echo "<input type= 'hidden' name='title' value='$title' />";
+        echo "<input type= 'hidden' name='author' value='$author' />";
+        echo "<input type= 'hidden' name='comment' value='$comment' />";
+        echo "<input type= 'submit' value='delete' />";
 		echo "</form>";
 	}
 	else{
@@ -51,7 +57,9 @@ while($stmt->fetch()){
         echo "<legend>By $username</legend>";
         echo "<p>Comment: $comment</p>";
         echo "</fieldset>";}
-        echo "<br />";
+		echo "<hr />";
+      echo "<br />";
+	   echo "<br />";
 	}
 	
 
