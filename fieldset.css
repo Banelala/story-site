@@ -1,0 +1,15 @@
+fieldset{
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #eee;
+}
+legend{
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #eee;
+  font-family: 'Pangolin', cursive;
+}

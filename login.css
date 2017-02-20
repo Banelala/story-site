@@ -1,0 +1,31 @@
+form{
+  text-align: center;
+  /* border: 1px solid black; */
+  padding: 20px;
+  margin: 0px auto;
+  position: relative;
+  width: 30%;
+  height: 230px;
+      top: 31px;
+}
+.info{
+  font-size: 25px;
+}
+body{
+  background-image:url("bg.jpeg");
+}
+div{
+  position: relative;
+      text-align: center;
+      /* left: 230px; */
+      top: -41px;
+      font-size: 20px;
+}
+a{
+  display: block;
+  color: black !important;
+}
+#back{
+  position: relative;
+  top: 20px;
+}

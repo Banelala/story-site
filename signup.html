@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <form name="input" action="createnewuser.php" method="post">
+        <p><input class="info" type="text" placeholder="Username" name="username" /></p>
+        <p><input class="info" type="password" placeholder="Password" name="passworda" /></p>
+        <!--make sure the password is exactly the same with the user's expectation-->
+        <p><input class="info" type="password" placeholder="PasswordAgain" name="passwordb" /></p>
+         <input type="hidden" name="token" value="<?php echo $_SESSION['token'];?>" />
+        <button type="submit" class="btn btn-primary btn-large">Sign Up</button>
+    </form>
+    <div id="back"><a href='login.html' >Back to Login</a></div>
+</body>
+</html>
