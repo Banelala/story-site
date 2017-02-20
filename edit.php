@@ -1,4 +1,5 @@
 <?php
+echo "<title>Edit</title>";
 session_start();
 if(!isset($_SESSION['username'])){
 	header("Location: login.html");

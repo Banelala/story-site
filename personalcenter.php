@@ -1,4 +1,5 @@
 <?php
+echo "<title>Personal Center</title>";
 session_start();
 //create a new CSRF token when a story is written.
 $_SESSION['token'] = bin2hex(openssl_random_pseudo_bytes(32));
